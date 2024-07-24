@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web for My Cossy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff6347;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: lightpurple; /* Adjust this to a valid color, e.g., #d8b4e2 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/giphy_V1.gif" alt="Animated Image">
+        <h1>Do you love me?</h1>
+    </div>
+    <div class="buttons">
+        <button onclick="response('yes')">Ofc I love you</button>
+        <button onclick="response('no')">Nu uh</button>
+    </div>
+
+    <script>
+        function response(answer) {
+            if (answer === 'yes') {
+                window.location.href = "yes.html"; // Open new web for "yes" response
+            } else {
+                window.location.href = "no.html"; // Open other web for "no" response
+            }
+        }
+    </script>
+</body>
+
+</html>

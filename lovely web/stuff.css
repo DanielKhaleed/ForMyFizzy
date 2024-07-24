@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'customfont';
+    src: url('fonts/GomePixel-ARJd7.otf') format('otf'),
+        url('fonts/GomePixel-DYJX1.otf') format('otf');
+    font-style: normal;
+}
+
+body {
+    font-family: 'customfont', Arial, Helvetica, sans-serif;
+}
+
